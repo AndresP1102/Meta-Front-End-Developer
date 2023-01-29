@@ -1,0 +1,127 @@
+body {
+    background-color: #DAD7CD;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: system-ui;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    background-color: #344E41;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.container li {
+    list-style-type: none;
+}
+
+.container a {
+    display: inline-block;
+    padding: 25px;
+    margin: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.container a:hover {
+    background-color: #a3b18a;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner {
+    border-radius: 10px;
+    background-color: lightblue;
+    background-image: url("../assets/plants.jpeg");
+    background-blend-mode: multiply;
+    padding-top: 60px;
+}
+
+.promo {
+    margin: 20px;
+}
+
+.promo-text {
+    padding-bottom: 0.5%;
+    color: white;
+}
+
+.promo-info {
+    text-align: justify;
+    color: white;
+}
+
+.image_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.image_container article a, a:hover {
+    margin: 20px;
+    color: white;
+}
+
+.image_container article a:hover {
+    background-color: #a3b18a;
+}
+
+.image_container > article > h2, p {
+    margin: 20px;
+}
+
+.columns {
+    justify-content: space-between;
+    background-color: #344e41;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.image_container article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer div img {
+    margin: 20px;
+    max-width: 100px;
+    max-height: 100px;
+}

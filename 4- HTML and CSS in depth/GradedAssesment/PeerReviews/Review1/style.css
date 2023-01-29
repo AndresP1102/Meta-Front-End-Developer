@@ -1,0 +1,183 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******** Common rules ********/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background: #f1f1f1;
+    max-width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    color: rgba(16, 57, 54);
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        max-width: 90%;
+    }
+}
+
+/******** Header ********/
+
+header > img {
+    display: block;
+    width: 100px;
+    margin: 3rem auto;
+}
+
+/******** Nav ********/
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    width: 50%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(16, 57, 54);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 3rem auto;
+    }
+}
+
+/******** Hero image ********/
+
+.hero {
+    background-image: url(images/spring.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f1f1f1;
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.hero-text {
+    background: rgba(16, 57, 54, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.hero h1, p {
+    margin: 1.5rem 2.5%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/******** Services ********/
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services article {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    width: 31%;
+    padding-bottom: 1.5rem;
+}
+
+.services img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.services h2 {
+    margin: 1.3rem 5%;
+    font-size: 1.5rem;
+}
+
+.services p {
+    margin: 2rem 5%;
+}
+
+.services a {
+    margin-left: 5%;
+    padding: 10px 20px;
+    background: rgb(16, 57, 54);
+    border: 1px solid rgb(16, 57, 54);
+    border-radius: 5px;
+    color:#f1f1f1;
+    text-decoration: none;
+}
+
+.services a:hover {
+    color: rgb(16, 57, 54);
+    background: #f1f1f1;
+    border: 1px solid rgb(16, 57, 54);
+    transition: 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .services {
+        flex-direction: column;
+    }
+
+    .services article {
+        width: 100%;
+        margin: 2.5% 0;
+    }
+}
+
+/******** Footer ********/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4rem 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+footer img {
+    width: 50px;
+}
+
+footer div {
+    width: 30%;
+    text-align: center;
+}
