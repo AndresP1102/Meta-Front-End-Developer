@@ -40,7 +40,7 @@ function App() {
  
   function resetResult(e) { 
   	// Add the code for the resetResult function
-    resultRef = null;
+    setResult(0)
   }; 
  
   return ( 
