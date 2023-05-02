@@ -53,13 +53,13 @@ function App() {
                                       <Chicago key={"04"} />
                                     </main>]}
           />
-         
+
           <Route path="/booking" element={[<main key={"05"}><PagesHeader key={"06"} title="Book a Reservation" img={BookReservation}/>
                                                             <BookingForm key={"07"} />
                                             </main>
                                           ]}
           />
-          
+
           <Route path="/booking/confirmation" element={<main key={"08"}><PagesHeader key={"09"} title="Book Confirmation" img={BookReservation} /> <ConfirmationPage key={"10"}/></main>}/>
           <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
